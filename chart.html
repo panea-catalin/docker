@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Prices</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Bitcoin Price Chart</h1>
+    <div id="btc-chart"></div>
+    <script>
+        var graphs = {{graphJSON | safe}};
+        Plotly.newPlot('btc-chart', graphs);
+    </script>
+</body>
+</html>
